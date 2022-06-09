@@ -904,6 +904,10 @@ body, html {
 }
 
 @media(max-width: 575px) {
+    .top-blur {
+        top: 100px;
+        right: -300px;
+    }
     .navbar-nav .logo-white,
     .navbar .navbar-brand img {
         width: 72px;
