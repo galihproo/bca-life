@@ -25,11 +25,22 @@
                 <a class="navbar-brand" href="#">
                     <img src="./assets/logo-navbar.svg" alt="BCA">
                 </a>
+                <a href="#" class="nav-item nav-search ml-auto mr-2">
+                    <img src="./assets/ic-search-navbar.svg" alt="BCA">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <!-- <img src="./assets/ic-menu-navbar.svg" alt="BCA"> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+                    <img src="./assets/logo-bca-white.svg" alt="BCA" class="logo-white">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <img src="./assets/ic-menu-navbar.svg" alt="BCA"> -->
+                        <div class="icon-close"></div>
+                    </button>
                     <div class="nav-links-group">
                         <a class="nav-link" href="#">Individu</a>
                         <a class="nav-link" href="#">Bisnis</a>
@@ -37,11 +48,12 @@
                         <a class="nav-link" href="#">Karir</a>
                     </div>
                     <div class="navbar-right">
-                        <a href="#" class="nav-item nav-search">
+                        <a href="#" class="nav-item nav-search d-none d-lg-block">
                             <img src="./assets/ic-search-navbar.svg" alt="BCA">
                         </a>
                         <a href="#" class="nav-item location">
-                            <img src="./assets/ic-location-navbar.svg" alt="BCA">
+                            <img class="d-none d-lg-block" src="./assets/ic-location-navbar.svg" alt="BCA">
+                            <img class="d-block d-lg-none" src="./assets/ic-location-navbar-white.svg" alt="BCA">
                         </a>
                         <div class="nav-item lang-switch">
                             <span class="active">ID</span>
@@ -61,7 +73,7 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6">
                         <div class="hero-left">
                             <h4>BCA Life Hospital 100% Refundable</h4>
                             <h1>Biaya Harian Kamar Rawat Inap, Ditanggung Gak Pake Nanggung</h1>
@@ -69,7 +81,7 @@
                             <a href="#" class="btn-hero">Ajukan di Sini</a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6">
                         <div class="hero-image">
                             <img class="primary" src="./assets/hero-image.png" alt="BCA">
                             <img class="dots" src="./assets/hero-dots.svg" alt="BCA">
@@ -89,29 +101,30 @@
             <img class="dots" src="./assets/feature-dots.svg" alt="BCA">
             <img class="wave" src="./assets/feature-wave.svg" alt="BCA">
             <div class="container">
-                <h2 class="section-title">Mengapa Hospital 100% Refundable?</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada magna, eu viverra metus. Nullam tristique sapien ligula, elementum laoreet ante aliquam id.</p>
+                <h2 class="section-title">Apa aja sih yang ditanggung?</h2>
+                <p class="section-subtitle">Biaya harian kamar rawat inap, unit perawatan insentif sampai
+                    pengembalian premi</p>
 
                 <div class="row row-feature">
-                    <div class="col-feature col-12 col-sm-6 col-md-4">
+                    <div class="col-feature col-12 col-sm-6 col-lg-4">
                         <div class="card-feature">
                             <img src="./assets/ic-feature-1.svg" alt="BCA">
                             <h3>Terjangkau</h3>
                             <p>Premi bisa dimulai dari Rp100-an perbulan</p>
                         </div>
                     </div>
-                    <div class="col-feature col-12 col-sm-6 col-md-4">
+                    <div class="col-feature col-12 col-sm-6 col-lg-4">
                         <div class="card-feature">
                             <img src="./assets/ic-feature-2.svg" alt="BCA">
-                            <h3>Klaim Mudah</h3>
-                            <p>Penggantian biaya harian Rumah Sakit dan pengembalian premi hingga 200%</p>
+                            <h3>Autodebet</h3>
+                            <p>Pembayaran bulanan/tahunan melalui autodebet Kartu Kredit BCA</p>
                         </div>
                     </div>
-                    <div class="col-feature col-12 col-sm-6 col-md-4">
+                    <div class="col-feature col-12 col-sm-6 col-lg-4">
                         <div class="card-feature">
                             <img src="./assets/ic-feature-3.svg" alt="BCA">
-                            <h3>Autodebet</h3>
-                            <p>Dapat mengikutsertakan pasangan dan anak untuk perlindungan maksimal</p>
+                            <h3>Klaim mudah</h3>
+                            <p>Informasi dan klaim asuransi via Halo BCA 1500 8888</p>
                         </div>
                     </div>
                 </div>
@@ -128,6 +141,7 @@
                 <h2 class="section-title">Hospital 100% Refundable</h2>
                 <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada magna, eu viverra.</p>
 
+                <!-- Desktop -->
                 <nav class="nav-tab-refundable">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                         <a class="nav-link active" id="refundable-1-tab" data-toggle="tab" href="#refundable-1" role="tab" aria-controls="refundable-1" aria-selected="true">
@@ -144,27 +158,42 @@
                         </a>
                     </div>
                 </nav>
+
+                <!-- Mobile -->
+                <div class="dropdown-refundable">
+                    <span class="dropdown-refundable-text">Kenali produk</span>
+                    <img src="./assets/ic-arrow-bottom.svg" alt="BCA">
+
+                    <div class="dropdown-refundable-menu">
+                        <span class="dropdown-item menu-1 active">Kenali Produk</span>
+                        <span class="dropdown-item menu-2">Perlu Diketahui</span>
+                        <span class="dropdown-item menu-3">Biaya</span>
+                        <span class="dropdown-item menu-4">Dapatkan Produk</span>
+                    </div>
+                    <div class="backdrop"></div>
+                </div>
+
                 <div class="tab-content tab-refundable" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="refundable-1" role="tabpanel" aria-labelledby="refundable-1-tab">
                         <div class="card-small-tab-1">
-                            <img src="./assets/ic-autodebet.svg" alt="BCA">
+                            <img src="./assets/ic-kenali-produk-1.svg" alt="BCA">
                             <div class="text">
-                                <h4>Pembayaran Autodebet</h4>
-                                <p>Pembayaran premi bulanan atau tahunan bisa melalui auto debet Kartu Kredit BCA</p>
+                                <h4>Perhari sampai jutaan rupiah</h4>
+                                <p>Penggantian biaya harian kamar Rawat Inap Rumah Sakit hingga Rp 600.000/hari, kamar Unit Perawatan Intensif Rumah Sakit hingga Rp 1.200.000/ hari (maksimal 30 hari/ tahun)*</p>
                             </div>
                         </div>
                         <div class="card-small-tab-1">
-                            <img src="./assets/ic-call-calling.svg" alt="BCA">
+                            <img src="./assets/ic-kenali-produk-2.svg" alt="BCA">
                             <div class="text">
-                                <h4>Klaim Mudah</h4>
-                                <p>Informasi polis dan klaim asuransi dapat dilakukan via Halo BCA 1500 888</p>
+                                <h4>Pengembalian sampai 200%</h4>
+                                <p>Pengembalian premi sampai dengan 200% untuk manfaat Meninggal Dunia</p>
                             </div>
                         </div>
                         <div class="card-small-tab-1">
-                            <img src="./assets/ic-receipt-discount.svg" alt="BCA">
+                            <img src="./assets/ic-kenali-produk-3.svg" alt="BCA">
                             <div class="text">
-                                <h4>Discount</h4>
-                                <p>Discount bila memilih cara bayar tahunan dan bila mengikutsertakan pasangan dan anak</p>
+                                <h4>Premi utuh</h4>
+                                <p>Pengembalian 100% premi yang telah dibayarkan dalam periode 10 tahun</p>
                             </div>
                         </div>
                     </div>
@@ -242,12 +271,12 @@
                                     <table class="table table-biaya m-0">
                                         <thead>
                                           <tr>
-                                            <th scope="col">Nama Plan</th>
-                                            <th scope="col">Plan A</th>
-                                            <th scope="col">Plan B</th>
-                                            <th scope="col">Plan C</th>
-                                            <th scope="col">Plan D</th>
-                                            <th scope="col">Plan E</th>
+                                            <th scope="col" width="210px">Nama Plan</th>
+                                            <th scope="col" width="100px">Plan A</th>
+                                            <th scope="col" width="150px">Plan B</th>
+                                            <th scope="col" width="150px">Plan C</th>
+                                            <th scope="col" width="150px">Plan D</th>
+                                            <th scope="col" width="150px">Plan E</th>
                                           </tr>
                                         </thead>
                                         <tbody>
@@ -663,18 +692,26 @@
                 <div class="footer-copyright">
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <div class="footer-copy">
+                            <div class="footer-copy d-none d-sm-flex">
                                 <img src="./assets/logo-ojk-new.png" alt="BCA">
                                 <p class="mb-0">BCA terdaftar dan diawasi oleh Otoritas Jasa Keuangan.</p>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="footer-copy">
+                            <div class="footer-copy d-flex d-sm-none">
                                 <img src="./assets/logo-lps.png" alt="BCA">
                                 <p class="mb-0">BCA merupakan peserta penjaminan LPS.</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
+                            <div class="footer-copy d-none d-sm-block">
+                                <img src="./assets/logo-lps.png" alt="BCA">
+                                <p class="mb-0">BCA merupakan peserta penjaminan LPS.</p>
+                            </div>
+                            <div class="footer-copy d-flex d-sm-none">
+                                <img src="./assets/logo-ojk-new.png" alt="BCA">
+                                <p class="mb-0">BCA terdaftar dan diawasi oleh Otoritas Jasa Keuangan.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 tnc-group">
                             <a href="#" class="footer-link">SBDK</a>
                             <span class="line">|</span>
                             <a href="#" class="footer-link">Kebijakan Privasi</a>
@@ -691,5 +728,57 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-refundable").click(function() {
+                $(".dropdown-refundable-menu").toggleClass("show");
+                $(".backdrop").toggleClass("show");
+                $(".container").toggleClass("static");
+            });
+
+            $(".dropdown-refundable-menu .dropdown-item").click(function() {
+                $(".dropdown-refundable-menu .dropdown-item.active").removeClass("active");
+
+                if($(this).hasClass("menu-1")) {
+                    $(this).addClass("active");
+                    $(".dropdown-refundable-text").text("Kenali Produk");
+                    $(".tab-pane").removeClass("d-block");
+                    $(".tab-pane").removeClass("show");
+                    $("#refundable-1").addClass("d-block");
+                    $("#refundable-1").addClass("show");
+                    $(".dropdown-refundable-menu .dropdown-item.menu-3").removeClass("border-0");
+                }
+                if($(this).hasClass("menu-2")) {
+                    $(this).addClass("active");
+                    $(".dropdown-refundable-text").text("Perlu Diketahui");
+                    $(".tab-pane").removeClass("d-block");
+                    $(".tab-pane").removeClass("show");
+                    $("#refundable-2").addClass("d-block");
+                    $("#refundable-2").addClass("show");
+                    $(".dropdown-refundable-menu .dropdown-item.menu-3").removeClass("border-0");
+                }
+                if($(this).hasClass("menu-3")) {
+                    $(this).addClass("active");
+                    $(".dropdown-refundable-text").text("Biaya");
+                    $(".tab-pane").removeClass("d-block");
+                    $(".tab-pane").removeClass("show");
+                    $("#refundable-3").addClass("d-block");
+                    $("#refundable-3").addClass("show");
+                    $(".dropdown-refundable-menu .dropdown-item.menu-3").removeClass("border-0");
+                }
+                if($(this).hasClass("menu-4")) {
+                    $(this).addClass("active");
+                    $(".dropdown-refundable-text").text("Dapatkan Produk");
+                    $(".tab-pane").removeClass("d-block");
+                    $(".tab-pane").removeClass("show");
+                    $("#refundable-4").addClass("d-block");
+                    $("#refundable-4").addClass("show");
+                    $(".dropdown-refundable-menu .dropdown-item.menu-3").addClass("border-0");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
