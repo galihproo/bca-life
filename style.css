@@ -1106,6 +1106,9 @@ body, html {
     .need-help .accordion .card .card-header {
         padding: 30px 20px;
     }
+    .need-help .accordion-faq .card .card-header {
+        padding: 20px;
+    }
     .need-help .accordion .card .card-body {
         padding: 0 20px 30px;
     }
@@ -1113,6 +1116,9 @@ body, html {
     .need-help .card-need-help {
         flex-direction: column;
         justify-content: center;
+    }
+    .need-help .card-need-help {
+        padding: 20px;
     }
     .need-help .accordion-faq-inner .card .card-header {
         flex-direction: row;
@@ -1137,12 +1143,15 @@ body, html {
     .need-help .accordion .card .card-header .btn-expand-faq {
         margin-top: 30px;
         margin-left: 0;
+        width: 100%;
     }
     .need-help .card-need-help h4 {
         margin: 20px 0 30px;
+        text-align: center;
     }
     .need-help .card-need-help .btn-hubungi-kami {
         margin-left: 0;
+        width: 100%;
     }
 
     .footer-text-group {
