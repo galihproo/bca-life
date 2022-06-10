@@ -36,7 +36,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <img src="./assets/logo-bca-white.svg" alt="BCA" class="logo-white">
+                    <img src="./assets/logo-bca-white.svg" alt="BCA" class="logo-white d-lg-none">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <!-- <img src="./assets/ic-menu-navbar.svg" alt="BCA"> -->
                         <div class="icon-close"></div>
@@ -256,7 +256,7 @@
                     </div>
                     <div class="tab-pane fade" id="refundable-3" role="tabpanel" aria-labelledby="refundable-3-tab">
                         <img class="tab-wave" src="./assets/feature-wave.svg" alt="BCA">
-                        <div class="accordion accordion-refundable-1" id="accordionRefundable2">
+                        <div class="accordion accordion-refundable-2" id="accordionRefundable2">
                             <div class="card">
                               <div class="card-header" id="heading-acc-refundable2-1" data-toggle="collapse" data-target="#collapse-acc-refundable2-1" aria-expanded="true" aria-controls="collapse-acc-refundable2-1">
                                 <h2 class="mb-0">
@@ -543,63 +543,246 @@
             <img src="./assets/bg-help.png" alt="BCA" class="background">
             <img src="./assets/feature-wave.svg" alt="BCA" class="wave">
             <img src="./assets/help-wave.svg" alt="BCA" class="wave-2">
+            <img src="./assets/help-wave.svg" alt="BCA" class="wave-3 d-sm-none">
+            <img src="./assets/feature-rect-1.svg" alt="BCA" class="rect">
             <div class="container">
-                <h2 class="section-title">Butuh Bantuan?</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac malesuada magna, eu viverra.</p>
+                <h2 class="section-title">Kepoin Yuk!</h2>
+                <p class="section-subtitle">Beberapa pertanyaan yang sering ditanyain tentang BCA Life Hospital 100% Refundable</p>
 
-                <div class="accordion accordion-help" id="accordionHelp">
+                <div class="accordion accordion-faq" id="accordionFaq">
                     <div class="card">
-                      <div class="card-header" id="heading-acc-help-1" data-toggle="collapse" data-target="#collapse-acc-help-1" aria-expanded="true" aria-controls="collapse-acc-help-1">
-                        <h2 class="mb-0">
-                            Lorem Ipsum Dolor sit amet consectetur adipiscing elit.
-                        </h2>
-                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
-                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                      <div class="card-header" id="heading-acc-faq-1">
+                        <div class="left">
+                            <img src="./assets/ic-faq.svg" alt="BCA">
+                            <h2 class="mb-0">
+                                Lihat FAQ
+                            </h2>
+                        </div>
+                        <div class="btn-expand-faq" data-toggle="collapse" data-target="#collapse-acc-faq-1" aria-expanded="false" aria-controls="collapse-acc-faq-1">
+                            <span class="see">Lihat Semua</span>
+                            <span class="hide">Sembunyikan</span>
+                        </div>
                       </div>
                   
-                      <div id="collapse-acc-help-1" class="collapse show" aria-labelledby="heading-acc-help-1" data-parent="#accordionHelp">
+                      <div id="collapse-acc-faq-1" class="collapse w-100" aria-labelledby="heading-acc-faq-1" data-parent="#accordionFaq">
                         <div class="card-body">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis risus tellus habitasse gravida quam quis molestie arcu sem. Lectus sapien duis accumsan, tellus sed.
-                            </p>
+
+                            <div class="accordion accordion-faq-inner" id="accordionFaqIn">
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-1" data-toggle="collapse" data-target="#collapse-acc-faq-in-1" aria-expanded="false" aria-controls="collapse-acc-faq-in-1">
+                                        <h2 class="mb-0">
+                                            Jika kartu kreditnya tidak dipakai lagi, programnya bagaimana?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-1" class="collapse" aria-labelledby="heading-acc-faq-in-1" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Programnya akan berhenti dan tidak ada pengembalian premi
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-2" data-toggle="collapse" data-target="#collapse-acc-faq-in-2" aria-expanded="false" aria-controls="collapse-acc-faq-in-2">
+                                        <h2 class="mb-0">
+                                            Apakah ada manfaat rawat jalan?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-2" class="collapse" aria-labelledby="heading-acc-faq-in-2" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Tidak ada manfaat rawat jalan, hanya rawat inap saja yang di-cover 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-3" data-toggle="collapse" data-target="#collapse-acc-faq-in-3" aria-expanded="false" aria-controls="collapse-acc-faq-in-3">
+                                        <h2 class="mb-0">
+                                            Jika berhenti programnya sebelum 10 tahun bagaimana?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-3" class="collapse" aria-labelledby="heading-acc-faq-in-3" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Jika berhenti di tengah jalan, program berhenti dan tidak ada pengembalian premi
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-4" data-toggle="collapse" data-target="#collapse-acc-faq-in-4" aria-expanded="false" aria-controls="collapse-acc-faq-in-4">
+                                        <h2 class="mb-0">
+                                            Melahirkan di cover atau tidak?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-4" class="collapse" aria-labelledby="heading-acc-faq-in-4" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <ol>
+                                                <li>
+                                                    Kehamilan termasuk melahirkan tidak dicover dalam produk ini
+                                                </li>
+                                                <li>
+                                                    Untuk rawat inap nya tidak di cover namun jika tutup usia karena melahirkan di cover yaitu pengembalian premi 100%
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-5" data-toggle="collapse" data-target="#collapse-acc-faq-in-5" aria-expanded="false" aria-controls="collapse-acc-faq-in-5">
+                                        <h2 class="mb-0">
+                                            Setelah ikut program, kapan saya bisa ajukan klaim? Bagaimana cara klaim-nya? Prosesnya berapa lama?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-5" class="collapse" aria-labelledby="heading-acc-faq-in-5" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <ol>
+                                                <li>
+                                                    Point 1: Untuk pengajuan klaim dapat melewati masa tunggu yaitu 30 hari kalender untuk klaim Rawat Inap akibat sakit/Penyakit (selain kondisi penyakit yang sudah ada sebelumnya), 6 bulan untuk klaim Rawat Inap atas kondisi penyakit yang sudah ada sebelumnya
+                                                </li>
+                                                <li>
+                                                    Point 2: Proses klaim nya cukup dengan melengkapi document terlebih dahulu maksimal 90 hari kalender sejak terjadi peristiwa yang dipertanggungkan dan dokumen dikirim langsung ke BCA Life - Chase Plaza Lantai 22 Jl. Jend. Sudirman Kav.21 Jakarta Selatan 12920.
+                                                </li>
+                                                <li>
+                                                    Point 3: Proses pembayaran klaim akan dibayarkan ke rekening dalam waktu 7 hari kerja untuk rawat inap dan 10 hari kerja untuk klaim meninggal dunia dan 60 hari kalender bila diperlukan investigasi, sejak dokumen klaim diterima lengkap dan disetujui oleh BCA Life.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-6" data-toggle="collapse" data-target="#collapse-acc-faq-in-6" aria-expanded="false" aria-controls="collapse-acc-faq-in-6">
+                                        <h2 class="mb-0">
+                                            Jika terpapar covid 19 di-cover atau tidak? 
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-6" class="collapse" aria-labelledby="heading-acc-faq-in-6" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Jika anda terdiagnosis Covid19 dan membutuhkan perawatan di Rumah Sakit, maka anda dapat dicover oleh produk ini dengan manfaat asuransi sebagaimana yang diberikan produk ini dan sesuai plan yang anda pilih
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-7" data-toggle="collapse" data-target="#collapse-acc-faq-in-7" aria-expanded="false" aria-controls="collapse-acc-faq-in-7">
+                                        <h2 class="mb-0">
+                                            Jika saya sudah punya penyakit kritis bisa di cover tidak?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-7" class="collapse" aria-labelledby="heading-acc-faq-in-7" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <ol>
+                                                <li>
+                                                    Jika pada saat awal mengikuti programnya sudah ada penyakit kritis tidak bisa di lanjut programnya
+                                                </li>
+                                                <li>
+                                                    Sesuai kebijakan BCA Life, Anda tidak dapat mengikuti program ini.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-8" data-toggle="collapse" data-target="#collapse-acc-faq-in-8" aria-expanded="false" aria-controls="collapse-acc-faq-in-8">
+                                        <h2 class="mb-0">
+                                            Apakah ada masa tunggu untuk mengajukan klaimnya?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-8" class="collapse" aria-labelledby="heading-acc-faq-in-8" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Ada masa tunggu untuk produk ini, yaitu 30 hari kalender sejak Tanggal Mulai Asuransi untuk klaim Rawat Inap akibat sakit/Penyakit (selain kondisi penyakit yang sudah ada sebelumnya) dan 6 bulan sejak Tanggal Mulai Asuransi untuk klaim Rawat Inap atas kondisi penyakit yang sudah ada sebelumnya yang tercantum secara lengkap dalam Polis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-9" data-toggle="collapse" data-target="#collapse-acc-faq-in-9" aria-expanded="false" aria-controls="collapse-acc-faq-in-9">
+                                        <h2 class="mb-0">
+                                            Untuk programnya apakah sudah termasuk penggantian biaya obat-obatan dan biaya dokter?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-9" class="collapse" aria-labelledby="heading-acc-faq-in-9" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Manfaat asuransi yang diberikan adalah penggantian biaya harian kamar Rawat Inap Rumah Sakit dan Unit Perawatan Intensif yang jumlahnya sesuai dengan Plan yang diambil. Penggantian biaya obat-obatan dan biaya dokter tidak dicover dalam produk ini.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-10" data-toggle="collapse" data-target="#collapse-acc-faq-in-10" aria-expanded="false" aria-controls="collapse-acc-faq-in-10">
+                                        <h2 class="mb-0">
+                                            Pendebetan apakah bisa dialihkan ke rekening tabungan?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-10" class="collapse" aria-labelledby="heading-acc-faq-in-10" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Tidak bisa
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading-acc-faq-in-11" data-toggle="collapse" data-target="#collapse-acc-faq-in-11" aria-expanded="false" aria-controls="collapse-acc-faq-in-11">
+                                        <h2 class="mb-0">
+                                            Pendebetannya kapan dilakukan?
+                                        </h2>
+                                        <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
+                                        <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
+                                    </div>
+                                
+                                    <div id="collapse-acc-faq-in-11" class="collapse" aria-labelledby="heading-acc-faq-in-11" data-parent="#accordionFaqIn">
+                                        <div class="card-body">
+                                            <p>
+                                                Untuk pendebetan akan dilakukan 1 bulan sekali yaitu setiap tanggal 25
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                       </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="heading-acc-help-2" data-toggle="collapse" data-target="#collapse-acc-help-2" aria-expanded="true" aria-controls="collapse-acc-help-2">
-                          <h2 class="mb-0">
-                              Lorem Ipsum Dolor sit amet consectetur adipiscing elit.
-                          </h2>
-                          <img class="plus" src="./assets/ic-plus-accordion.svg" alt="BCA">
-                          <img class="minus" src="./assets/ic-minus-accordion.svg" alt="BCA">
-                        </div>
-                    
-                        <div id="collapse-acc-help-2" class="collapse show" aria-labelledby="heading-acc-help-2" data-parent="#accordionHelp">
-                          <div class="card-body">
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis risus tellus habitasse gravida quam quis molestie arcu sem. Lectus sapien duis accumsan, tellus sed.
-                              </p>
-                              <ul>
-                                  <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                  </li>
-                                  <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis risus tellus habitasse gravida quam quis molestie arcu sem. Lectus sapien duis accumsan, tellus sed.
-                                  </li>
-                              </ul>
-                          </div>
-                        </div>
-                      </div>
                 </div>
                 <div class="card-need-help">
+                    <img src="./assets/ic-butuh-bantuan.svg" alt="BCA">
                     <h4>Tidak menemukan apa yang anda cari?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis risus tellus habitasse gravida quam quis molestie arcu sem. Lectus sapien duis accumsan, tellus sed.</p>
-                    <a href="#" class="btn-link">Lihat Solusi di Halaman FAQ</a>
-                </div>
-                <div class="card-need-help">
-                    <h4>Butuh bantuan lainnya? Hubungi kami</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis risus tellus habitasse gravida quam quis molestie arcu sem. Lectus sapien duis accumsan, tellus sed.</p>
-                    <a href="#" class="btn-link">Hubungi Kami</a>
+                    <a href="#" class="btn-hubungi-kami">Hubungi Kami</a>
                 </div>
             </div>
         </section>

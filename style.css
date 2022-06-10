@@ -405,6 +405,10 @@ body, html {
     max-width: 760px;
     margin: 0 auto;
 }
+.refundable .tab-refundable .accordion-refundable-2 {
+    max-width: 1020px;
+    margin: 0 auto;
+}
 .refundable .tab-refundable .accordion .card,
 .need-help .accordion .card {
     background: #FFFFFF;
@@ -431,13 +435,17 @@ body, html {
 .refundable .tab-refundable .accordion .card .card-header[aria-expanded="false"] .minus,
 .refundable .tab-refundable .accordion .card .card-header[aria-expanded="true"] .plus,
 .need-help .accordion .card .card-header[aria-expanded="false"] .minus,
-.need-help .accordion .card .card-header[aria-expanded="true"] .plus {
+.need-help .accordion .card .card-header[aria-expanded="true"] .plus,
+.need-help .accordion-faq-inner .card .card-header[aria-expanded="false"] .minus,
+.need-help .accordion-faq-inner .card .card-header[aria-expanded="true"] .plus {
     display: none;
 }
 .refundable .tab-refundable .accordion .card .card-header[aria-expanded="false"] .plus,
 .refundable .tab-refundable .accordion .card .card-header[aria-expanded="true"] .minus,
 .need-help .accordion .card .card-header[aria-expanded="false"] .plus,
-.need-help .accordion .card .card-header[aria-expanded="true"] .minus {
+.need-help .accordion .card .card-header[aria-expanded="true"] .minus,
+.need-help .accordion-faq-inner .card .card-header[aria-expanded="false"] .plus,
+.need-help .accordion-faq-inner .card .card-header[aria-expanded="true"] .minus {
     display: block;
 }
 .refundable .tab-refundable .accordion .card .card-header h2,
@@ -452,13 +460,15 @@ body, html {
     padding: 0 40px 20px;
 }
 .refundable .tab-refundable .accordion-refundable-1 .card .card-body ol,
-.need-help .accordion .card .card-body ul {
+.need-help .accordion .card .card-body ul,
+.need-help .accordion .card .card-body ol {
     padding-left: 20px;
     margin: 0;
 }
 .refundable .tab-refundable .accordion-refundable-1 .card .card-body ol li,
 .need-help .accordion .card .card-body ul li,
-.need-help .accordion .card .card-body p {
+.need-help .accordion .card .card-body p,
+.need-help .accordion .card .card-body ol li {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -467,7 +477,8 @@ body, html {
     margin-bottom: 10px;
 }
 .refundable .tab-refundable .accordion-refundable-1 .card .card-body ol li:last-child,
-.need-help .accordion .card .card-body ul li:last-child {
+.need-help .accordion .card .card-body ul li:last-child,
+.need-help .accordion .card .card-body ol li:last-child {
     margin-bottom: 0;
 }
 .refundable .tab-refundable .accordion .card .card-body {
@@ -476,7 +487,22 @@ body, html {
 .refundable .tab-refundable .accordion .card .card-body .table-biaya {
     width: 940px;
 }
-.refundable .tab-refundable .accordion .card .card-body .table-biaya thead tr,
+.refundable .tab-refundable .accordion .card .card-body .table-biaya thead tr th {
+    background-color: #0293D5;
+    color: #fff;
+    border: none;
+    border-color: #0293D5;
+    border-spacing: 0px;
+}
+.refundable .tab-refundable .accordion .card .card-body .table-biaya thead tr th:first-child {
+    border-radius: 15px 0 0 15px;
+}
+.refundable .tab-refundable .accordion .card .card-body .table-biaya thead tr th:last-child {
+    border-radius: 0 15px 15px 0;
+}
+.refundable .tab-refundable .accordion .card .card-body .table-biaya thead tr {
+    background-color: #0293D5;
+}
 .refundable .tab-refundable .accordion .card .card-body .table-biaya tr {
     background-color: #F7FAFC;
 }
@@ -572,45 +598,111 @@ body, html {
 .need-help .wave-2 {
     position: absolute;
     left: 47px;
-    bottom: -60px;
+    top: 470px;
+}
+.need-help .rect {
+    position: absolute;
+    top: 700px;
+    right: 100px;
 }
 .need-help .container {
     position: relative;
     z-index: 2;
 }
-.need-help .accordion {
+.need-help .accordion-faq {
     max-width: 890px;
     margin: 60px auto 20px;
 }
+.need-help .accordion-faq .card {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(57, 79, 136, 0.1);
+    border-radius: 40px;
+    padding: 0;
+    max-width: 890px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: flex-start;  
+}
+.need-help .accordion-faq .card .btn-expand-faq {
+    background: #005CAA;
+    border-radius: 2000px;
+    width: 226px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-left: auto;
+}
+.need-help .accordion-faq .card .btn-expand-faq[aria-expanded="true"] span.see,
+.need-help .accordion-faq .card .btn-expand-faq[aria-expanded="false"] span.hide {
+    display: none;
+}
+.need-help .accordion-faq .card .btn-expand-faq[aria-expanded="false"] span.see,
+.need-help .accordion-faq .card .btn-expand-faq[aria-expanded="true"] span.hide {
+    display: block;
+}
+.need-help .accordion-faq .card .card-header {
+    width: 100%;
+    padding: 30px;
+}
+.need-help .accordion-faq .card .card-header .left {
+    display: flex;
+    align-items: center;
+}
+.need-help .accordion-faq .card .card-header .left h2 {
+    margin-left: 20px;
+}
 .need-help .card-need-help {
     background: #FFFFFF;
-    box-shadow: 0px 30px 100px rgba(57, 79, 136, 0.15);
+    box-shadow: 0px 30px 60px rgba(57, 79, 136, 0.1);
     border-radius: 40px;
     padding: 30px;
     max-width: 890px;
     margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
 }
 .need-help .card-need-help h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 120%;
     color: #121212;
-    margin-bottom: 15px;
+    margin: 0 0 0 15px;
 }
-.need-help .card-need-help p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    color: #121212;
-    opacity: 0.7;
-    margin-bottom: 15px;
-}
-.need-help .card-need-help .btn-link {
+.need-help .card-need-help .btn-hubungi-kami {
+    background: #005CAA;
+    border-radius: 2000px;
+    width: 226px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #005CAA;
-    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-left: auto;
+}
+.need-help .accordion-faq-inner,
+.need-help .accordion-faq-inner .card {
+    box-shadow: none;
+    width: 100%;
+}
+.need-help .accordion-faq-inner .card {
+    border-top: 1px solid #D0D6DB;
+    border-radius: 0;
+    margin: 0;
+}
+.need-help .accordion-faq-inner .card .card-header,
+.need-help .accordion-faq-inner .card .card-body {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Footer */
@@ -881,18 +973,20 @@ body, html {
     }
     .refundable .tab-refundable .card-small-tab-1 {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .refundable .tab-refundable .card-small-tab-1 .text {
         margin: 20px 0 0 0;
+        text-align: center;
     }
     .refundable .tab-refundable .card-get-product {
         padding: 20px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .refundable .tab-refundable .card-get-product .text {
         margin: 20px 0 30px;
+        text-align: center;
     }
     .refundable .tab-refundable .card-get-product .text,
     .refundable .tab-refundable .card-get-product .btn-get-product {
@@ -976,18 +1070,79 @@ body, html {
     }
     .refundable .tab-refundable .accordion .card .card-header h2, 
     .need-help .accordion .card .card-header h2 {
-        max-width: 261px;
+        max-width: 85%;
+    }
+    .refundable .tab-refundable .accordion .card .card-body .table-biaya thead tr th:first-child {
+        width: 210px !important;
     }
 
-    .need-help .wave,
+    /* .need-help .wave,
     .need-help .wave-2 {
         display: none;
+    } */
+    .need-help .background {
+        bottom: 0;
+    }
+    .need-help .wave {
+        top: -20px;
+        right: -20px;
+    }
+    .need-help .wave-2 {
+        width: 90px;
+        top: 440px;
+        left: -40px;
+    }
+    .need-help .wave-3 {
+        position: absolute;
+        width: 90px;
+        top: 1650px;
+        left: -40px;
+    }
+    .need-help .rect {
+        width: 34px;
+        right: -10px;
+        top: 880px;
     }
     .need-help .accordion .card .card-header {
         padding: 30px 20px;
     }
     .need-help .accordion .card .card-body {
         padding: 0 20px 30px;
+    }
+    .need-help .accordion-faq .card .card-header,
+    .need-help .card-need-help {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .need-help .accordion-faq-inner .card .card-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+    }
+    .need-help .accordion-faq-inner .card .card-body {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .need-help .accordion-faq .card .card-header .left {
+        flex-direction: column;
+    }
+    .need-help .accordion-faq .card .card-header .left h2 {
+        margin: 20px 0 0;
+        text-align: center;
+        max-width: 100%;
+    }
+    .need-help .accordion .card .card-header .btn-expand-faq {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .need-help .card-need-help h4 {
+        margin: 20px 0 30px;
+    }
+    .need-help .card-need-help .btn-hubungi-kami {
+        margin-left: 0;
     }
 
     .footer-text-group {
