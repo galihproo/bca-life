@@ -6,6 +6,10 @@ body, html {
     overflow-x: hidden;
 }
 
+.h1, .h2, .h3, h4, h5, h6 {
+    margin-top: 0;
+} 
+
 .wrapper {
     position: relative;
 }
@@ -138,7 +142,7 @@ body, html {
     padding-top: 60px;
 }
 .hero-left h4 {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 16px;
     line-height: 130%;
     letter-spacing: 0.5px;
@@ -261,7 +265,7 @@ body, html {
     left: calc(50% - 77px);
 }
 .feature .row-feature .card-feature h3 {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 24px;
     line-height: 120%;
     text-align: center;
@@ -394,7 +398,7 @@ body, html {
     margin-left: 20px;
 }
 .refundable .tab-refundable .card-small-tab-1 .text h4 {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 18px;
     line-height: 120%;
     color: #121212;
@@ -424,6 +428,8 @@ body, html {
     /* padding: 20px 40px; */
     border: none;
     margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
 }
 .refundable .tab-refundable .accordion .card:last-child,
 .need-help .accordion .card:last-child {
@@ -457,7 +463,7 @@ body, html {
 }
 .refundable .tab-refundable .accordion .card .card-header h2,
 .need-help .accordion .card .card-header h2 {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 18px;
     line-height: 120%;
     color: #121212;
@@ -563,7 +569,7 @@ body, html {
     margin-left: 20px;
 }
 .refundable .tab-refundable .card-get-product .text h4 {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 18px;
     line-height: 120%;
     color: #121212;
@@ -676,6 +682,7 @@ body, html {
     align-items: center;
 }
 .need-help .accordion-faq .card .card-header .left h2 {
+    margin-top: 0;
     margin-left: 20px;
 }
 .need-help .card-need-help {
@@ -689,7 +696,7 @@ body, html {
     align-items: center;
 }
 .need-help .card-need-help h4 {
-    font-weight: 600;
+    font-weight: 600 !important;
     font-size: 18px;
     line-height: 120%;
     color: #121212;
