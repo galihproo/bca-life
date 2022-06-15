@@ -6,7 +6,7 @@ body, html {
     overflow-x: hidden;
 }
 
-.h1, .h2, .h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 } 
 
@@ -467,6 +467,7 @@ body, html {
     font-size: 18px;
     line-height: 120%;
     color: #121212;
+    margin-top: 0;
 }
 .refundable .tab-refundable .accordion .card .card-body,
 .need-help .accordion .card .card-body {
@@ -667,11 +668,11 @@ body, html {
 }
 .need-help .accordion-faq .card .btn-expand-faq[aria-expanded="true"] span.see,
 .need-help .accordion-faq .card .btn-expand-faq[aria-expanded="false"] span.hide {
-    display: none;
+    display: none !important;
 }
 .need-help .accordion-faq .card .btn-expand-faq[aria-expanded="false"] span.see,
 .need-help .accordion-faq .card .btn-expand-faq[aria-expanded="true"] span.hide {
-    display: block;
+    display: block !important;
 }
 .need-help .accordion-faq .card .card-header {
     width: 100%;
